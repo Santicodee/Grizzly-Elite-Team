@@ -344,10 +344,10 @@ body {
 /* Mobile screen */
 @media (max-width: 426px) {
   .navbar h1 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .logo {
-    width: 40px;
+    width: 35px;
   }
   .intro-text h1 {
     font-size: 30px;
@@ -359,6 +359,14 @@ body {
   .picture {
     width: 367px;
     height: 620px;
+  }
+  .outcome-text h1,
+  .outcome-includes h1 {
+    text-align: center;
+  }
+    .photo-outcome {
+    width: 280px;
+    height: 180px;
   }
   /* reviews */
   .feedback-card {
@@ -373,6 +381,7 @@ body {
   /* outcome part */
   .outcomes {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   /* outcome-includes last part */
   .includes {
@@ -450,6 +459,13 @@ body {
   }
   .design-icon {
     width: 200px;
+  }
+  .outcome-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+ 
   }
 
   /* outcome-includes last part */
