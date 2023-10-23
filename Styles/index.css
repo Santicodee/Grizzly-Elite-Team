@@ -359,7 +359,8 @@ body {
   max-width: 900px;
   overflow: hidden;
 }
-.btn4 {
+.btn4,
+.btn7 {
   background-color: #f16520;
   color: white;
   width: 45px;
@@ -410,8 +411,11 @@ body {
   font-size: 54px;
 }
 .btn5 {
-  background-color: #f0681f;
-  width: 150px;
+  background: var(
+    --Button,
+    linear-gradient(145deg, #ee3524 -81.34%, #f47b20 111.6%)
+  );
+  width: 350px;
   height: 50px;
   border-radius: 50px;
   color: #ffffff;
@@ -469,7 +473,10 @@ form {
   font-size: 30px;
 }
 .btn-prices {
-  background-color: #f0681f;
+  background: var(
+    --Button,
+    linear-gradient(145deg, #ee3524 -81.34%, #f47b20 111.6%)
+  );
   width: 150px;
   height: 50px;
   border-radius: 50px;
@@ -590,13 +597,162 @@ h5 {
   bottom: 75px;
 }
 .btn-card {
-  background-color: #f0681f;
+  background: var(
+    --Button,
+    linear-gradient(145deg, #ee3524 -81.34%, #f47b20 111.6%)
+  );
   width: 100px;
   height: 30px;
   border-radius: 50px;
   color: #ffffff;
   font-size: 10px;
   border-style: none;
+}
+
+/* community feedback */
+.community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.community h1 {
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.community-feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 100%;
+  position: relative;
+}
+.student-pic {
+  width: 450px;
+  height: 300px;
+}
+.play-icon {
+  width: 60px;
+  position: absolute;
+  left: 20%;
+}
+.student1 {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upper-flex {
+  display: flex;
+  gap: 10px;
+}
+.upper-flex p {
+  color: #6f6f6f;
+}
+.student-icon {
+  width: 40px;
+}
+.student1 p {
+  font-size: 12px;
+}
+.community-rate {
+  display: flex;
+  gap: 2px;
+}
+.reverse {
+  flex-direction: row-reverse;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.play-icon2 {
+  width: 60px;
+  position: absolute;
+  right: 20%;
+}
+.student-comment {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.comment1 {
+  display: flex;
+  max-width: 450px;
+  gap: 20px;
+}
+.comment1 p:nth-of-type(2) {
+  font-size: 12px;
+  color: #6f6f6f;
+}
+.comment1 p {
+  font-size: 15px;
+}
+.comment-icon {
+  width: 68px;
+}
+.comment2 {
+  text-align: center;
+  max-width: 950px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.comment2 p:nth-of-type(1) {
+  color: #6f6f6f;
+}
+.comment2 p {
+  font-size: 12px;
+}
+/* counselor comment */
+.counselors-comment h1 {
+  text-align: center;
+  max-width: 1000px;
+}
+.counselor-bibi {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.counselor-bibi img {
+  width: 400px;
+  height: 500px;
+}
+.bibi-comment {
+  max-width: 450px;
+}
+.relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right5 {
+  right: -300px;
+  bottom: 45px;
+}
+.left5 {
+  left: -300px;
+  bottom: 45px;
+}
+.last-community-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.parent-photo {
+  width: 400px;
+}
+.last-comment {
+  max-width: 450px;
+}
+.last-comment p,
+.bibi-comment p {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* scroll animation */
@@ -613,12 +769,20 @@ h5 {
   }
 }
 .carousel,
-.carousel1 {
+.carousel1,
+.carousel2 {
   scroll-behavior: smooth;
 }
 
 /* tablet screen */
-@media (max-width: 768px) {
+@media (max-width: 914px) {
+  .right5 {
+    right: 100px;
+  }
+  .left5 {
+    left: 100px;
+  }
+
   .intro-text h1 {
     font-size: 40px;
     width: 600px;
@@ -786,9 +950,57 @@ h5 {
   .prices {
     gap: 10px;
   }
+
+  /* community feedback */
+  .community h1 {
+    font-size: 40px;
+  }
+  .community-feedback {
+    gap: 10px;
+  }
+  .student-pic {
+    width: 300px;
+    height: 200px;
+  }
+  .student1 {
+    max-width: 350px;
+  }
+  .student-comment {
+    gap: 10px;
+  }
+  .comment1 {
+    width: 335px;
+  }
+  .comment2 {
+    width: 700px;
+  }
+  .counselor-bibi img {
+    width: 300px;
+    height: 350px;
+  }
+  .bibi-comment {
+    max-width: 350px;
+  }
+  .bibi-comment p,
+  .last-comment p {
+    font-size: 12px;
+  }
+  .last-comment {
+    max-width: 300px;
+  }
+  .parent-photo {
+    width: 300px;
+    height: 200px;
+  }
 }
 /* Mobile screen */
 @media (max-width: 541px) {
+  .right5 {
+    right: 250px;
+  }
+  .left5 {
+    left: 250px;
+  }
   .navbar h1 {
     font-size: 10px;
   }
@@ -873,7 +1085,8 @@ h5 {
     z-index: 2;
   }
   .design2 {
-    /* bottom: -3850px; */
+    bottom: -4004px;
+    left: 40px;
     z-index: 2;
   }
   .counselor-box img {
@@ -969,10 +1182,48 @@ h5 {
   .input-cvv {
     width: 120px;
   }
+  .community-feedback {
+    flex-direction: column;
+  }
+  .student1 {
+    max-width: 300px;
+  }
+  .play-icon {
+    top: 16%;
+    left: 40%;
+  }
+  .play-icon2 {
+    top: 16%;
+    right: 40%;
+  }
+  .student-comment {
+    flex-direction: column;
+  }
+  .comment2 {
+    max-width: 300px;
+  }
+  .community h1 {
+    font-size: 30px;
+    max-width: 300px;
+  }
+  .counselor-bibi {
+    flex-direction: column;
+    width: 300px;
+  }
+  .last-community-comment {
+    flex-direction: column;
+    width: 300px;
+  }
 }
 @media (max-width: 391px) {
+  .right5 {
+    right: 300px;
+  }
+  .left5 {
+    left: 300px;
+  }
   .design2 {
-    bottom: -4250px;
+    left: 0px;
   }
   .intro-content h1 {
     width: 350px;
@@ -1119,4 +1370,32 @@ h5 {
   .flex p {
     width: 200px;
   }
+  .student1,
+  .comment2,
+  .comment1 {
+    max-width: 250px;
+  }
+  .student-pic {
+    max-width: 250px;
+    height: 180px;
+  }
+  .play-icon,
+  .play-icon2 {
+    top: 14%;
+  }
+  .counselor-bibi img {
+    width: 250px;
+    height: 300px;
+  }
+  .counselor-bibi {
+    align-items: center;
+  }
+  .bibi-comment,
+  .last-community-comment {
+    max-width: 250px;
+  }
+  .parent-photo {
+  width: 250px;
+  height: 140px;
+}
 }
