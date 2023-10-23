@@ -115,7 +115,18 @@ body {
   justify-content: center;
   position: relative;
   margin-top: 20px;
+  max-width: 900px;
   overflow: hidden;
+}
+.dragging {
+  cursor: grab;
+  user-select: none;
+}
+.rev-fed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .feedback-card {
   display: flex;
@@ -145,6 +156,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .left {
   position: absolute;
@@ -344,6 +356,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  max-width: 900px;
   overflow: hidden;
 }
 .btn4 {
@@ -357,6 +370,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  cursor: pointer;
 }
 .left4 {
   left: 30px;
@@ -366,6 +380,225 @@ body {
   right: 30px;
   bottom: 45px;
 }
+.btn6 {
+  background-color: #f0681f;
+
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border-style: none;
+}
+
+/* Training */
+
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);
+}
+.training h1 {
+  font-size: 54px;
+}
+.btn5 {
+  background-color: #f0681f;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border-style: none;
+}
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.name-input,
+.email-input {
+  height: 50px;
+  width: 300px;
+}
+.name-input,
+.email-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #6f6f6f;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.price-reg {
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  border: solid 1px #f0681f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.price-reg p,
+.price-prem p {
+  width: 200px;
+  color: #6f6f6f;
+}
+.price-reg h2 {
+  font-size: 26px;
+}
+.price-text {
+  font-size: 30px;
+}
+.btn-prices {
+  background-color: #f0681f;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  border-style: none;
+}
+.price-prem {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: dashed 2px #f0681f;
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+}
+.prem-title {
+  border: solid 1px #f0681f;
+  padding: 10px;
+  position: absolute;
+  top: -25px;
+  background-color: #ffffff;
+}
+/* payment */
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.008),
+    0px 0px 5.3px rgba(0, 0, 0, 0.012), 0px 0px 10px rgba(0, 0, 0, 0.015),
+    0px 0px 17.9px rgba(0, 0, 0, 0.018), 0px 0px 33.4px rgba(0, 0, 0, 0.022),
+    0px 0px 80px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+.card-type {
+  display: flex;
+  gap: 20px;
+}
+
+.pay-card {
+  border: solid 2px #b3adad;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.pay-card:hover {
+  border: solid 2px #b21b20;
+}
+.card-icon {
+  width: 20px;
+}
+.dot-icon {
+  width: 30px;
+}
+.dot-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: solid 2px #b3adad;
+  border-radius: 5px;
+}
+.input-card {
+  width: 395px;
+  height: 32px;
+  border: solid 2px #b3adad;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.group {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.card-number-icon {
+  position: absolute;
+  right: 20px;
+}
+h5 {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.expiration-card {
+  display: flex;
+  justify-content: space-between;
+}
+.input-date,
+.input-cvv {
+  width: 180px;
+  height: 32px;
+  border: solid 2px #b3adad;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.right-icon {
+  position: absolute;
+  right: 25px;
+  bottom: 75px;
+}
+.btn-card {
+  background-color: #f0681f;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 10px;
+  border-style: none;
+}
+
 /* scroll animation */
 .hidden {
   opacity: 0;
@@ -378,6 +611,10 @@ body {
   .hidden {
     transition: none;
   }
+}
+.carousel,
+.carousel1 {
+  scroll-behavior: smooth;
 }
 
 /* tablet screen */
@@ -406,6 +643,7 @@ body {
   .content {
     gap: 0;
   }
+
   /* reviews */
   .star {
     width: 55px;
@@ -414,6 +652,8 @@ body {
   .rt {
     font-size: 44px;
   }
+  /* carousel smooth */
+
   /* reviews-feedback */
   .feedback-card {
     gap: 10px;
@@ -426,6 +666,7 @@ body {
     width: 45px;
     height: 45px;
   }
+
   /* outcome part */
   .outcomes {
     padding-left: 20px;
@@ -455,6 +696,7 @@ body {
     width: 300px;
     font-size: 14px;
   }
+
   /* outcome-includes last part */
   .outcome-includes h1 {
     font-size: 40px;
@@ -514,6 +756,35 @@ body {
   }
   .flex1 {
     gap: 20px;
+  }
+
+  /* Training */
+  .training h1 {
+    font-size: 40px;
+  }
+  .name-input,
+  .email-input {
+    width: 250px;
+  }
+  .price-reg,
+  .price-prem {
+    width: 230px;
+    padding: 10px;
+  }
+  .price-reg p,
+  .price-prem p {
+    font-size: 15px;
+  }
+  .price-reg h2,
+  .price-prem h2 {
+    font-size: 20px;
+  }
+  .price-text {
+    font-size: 25px;
+  }
+
+  .prices {
+    gap: 10px;
   }
 }
 /* Mobile screen */
@@ -575,6 +846,10 @@ body {
   .outcome-includes {
     gap: 0;
   }
+  .design-icon {
+    width: 200px;
+    top: 200px;
+  }
   /* counselor */
   .counselor h1 {
     font-size: 30px;
@@ -634,6 +909,73 @@ body {
   }
   .flex p {
     text-align: center;
+  }
+  /* Training */
+  .training h1 {
+    font-size: 30px;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices {
+    flex-direction: column;
+  }
+  .price-prem {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .price-reg p,
+  .price-prem p {
+    font-size: 12px;
+  }
+
+  .price-reg h2,
+  .price-prem h2 {
+    font-size: 15px;
+  }
+  .price-text {
+    font-size: 15px;
+  }
+  .price-reg,
+  .price-prem {
+    height: 300px;
+  }
+
+  .prices {
+    gap: 20px;
+  }
+  .training h1 {
+    text-align: center;
+  }
+  .training {
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  }
+  /* payment */
+  .payment-card {
+    max-width: 280px;
+  }
+  .card-type {
+    gap: 10px;
+  }
+  .pay-card {
+    width: 80px;
+  }
+  .input-card {
+    width: 300px;
+  }
+
+  .input-date,
+  .input-cvv {
+    width: 120px;
+  }
+}
+@media (max-width: 391px) {
+  .design2 {
+    bottom: -4250px;
+  }
+  .intro-content h1 {
+    width: 350px;
   }
 }
 
@@ -695,10 +1037,7 @@ body {
     font-size: 15px;
     width: 300px;
   }
-  .design-icon {
-    width: 100px;
-    top: 200px;
-  }
+
   .right-paragraph {
     font-size: 15px;
     width: 300px;
