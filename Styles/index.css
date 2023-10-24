@@ -425,6 +425,7 @@ body {
 }
 form {
   display: flex;
+  max-width: 700px;
   gap: 10px;
   margin-bottom: 40px;
 }
@@ -777,10 +778,10 @@ h5 {
 /* tablet screen */
 @media (max-width: 914px) {
   .right5 {
-    right: 100px;
+    right: 35px;
   }
   .left5 {
-    left: 100px;
+    left: 35px;
   }
 
   .intro-text h1 {
@@ -996,10 +997,10 @@ h5 {
 /* Mobile screen */
 @media (max-width: 541px) {
   .right5 {
-    right: 250px;
+    right: -90px;
   }
   .left5 {
-    left: 250px;
+    left: -90px;
   }
   .navbar h1 {
     font-size: 10px;
@@ -1214,13 +1215,16 @@ h5 {
     flex-direction: column;
     width: 300px;
   }
+  .about-feedback {
+    max-width: 300px;
+  }
 }
-@media (max-width: 391px) {
+@media (max-width: 426px) {
   .right5 {
-    right: 300px;
+    right: -40px;
   }
   .left5 {
-    left: 300px;
+    left: -40px;
   }
   .design2 {
     left: 0px;
@@ -1231,6 +1235,12 @@ h5 {
 }
 
 @media (max-width: 376px) {
+  .right5 {
+    right: -30px;
+  }
+  .left5 {
+    left: -30px;
+  }
   .intro-text h1 {
     font-size: 20px;
     width: 300px;
@@ -1395,7 +1405,15 @@ h5 {
     max-width: 250px;
   }
   .parent-photo {
-  width: 250px;
-  height: 140px;
+    width: 250px;
+    height: 140px;
+  }
 }
+@media (max-width: 321px) {
+  .right5 {
+    right: 5px;
+  }
+  .left5 {
+    left: -5px;
+  }
 }
