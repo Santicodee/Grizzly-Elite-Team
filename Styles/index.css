@@ -898,7 +898,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 10px;
+  padding: 20px;
   border-top: solid 3px #f16520;
 }
 .footer-last p {
@@ -948,7 +948,7 @@ h5 {
   .hidden {
     transition: none;
   }
-   .hidden1 {
+  .hidden1 {
     transition: none;
   }
 }
@@ -958,6 +958,12 @@ h5 {
   scroll-behavior: smooth;
 }
 
+/* large Screen */
+@media (min-width: 1440px) {
+  .footer-last {
+    justify-content: space-around;
+  }
+}
 /* tablet screen */
 @media (max-width: 914px) {
   .right5 {
