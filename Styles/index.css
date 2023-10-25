@@ -1300,7 +1300,7 @@ h5 {
     z-index: 2;
   }
   .design2 {
-    bottom: -4004px;
+    bottom: -3800px;
     left: 40px;
     z-index: 2;
   }
@@ -1465,11 +1465,8 @@ h5 {
     width: 350px;
   }
 }
-@media (max-width: 413px) {
-  .design2 {
-    bottom: -4400px;
-  }
-}
+
+
 
 @media (max-width: 376px) {
   .right5 {
@@ -1580,9 +1577,7 @@ h5 {
     width: 300px;
   }
 
-  .design2 {
-    bottom: -3900px;
-  }
+
   /* about-content */
   .logo-seal {
     width: 200px;
@@ -1664,7 +1659,7 @@ h5 {
 }
 @media (max-width: 413px) {
   .design2 {
-    bottom: -4150px;
+    bottom: -3940px;
   }
 }
 @media (max-width: 321px) {
